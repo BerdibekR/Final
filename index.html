@@ -1,0 +1,842 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the history, trophies and legendary moments of Real Madrid.">
+
+    <title>Real Madrid | The Legacy Museum</title>
+
+    <link rel="icon" type="image/png" href="images/real-madrid-crest.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="timeline.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-crown">♛</span>
+                REAL MADRID
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">History</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#moments">Moments</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="players.html">Players</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="theme-switch-wrapper">
+                    <span class="theme-icon" aria-hidden="true">☾</span>
+
+                    <label class="theme-switch" aria-label="Toggle theme">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="theme-slider"></span>
+                    </label>
+
+                    <span class="theme-icon" aria-hidden="true">☀</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header class="hero-section" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <p class="hero-eyebrow">
+                THE GREATEST CLUB IN FOOTBALL HISTORY
+            </p>
+
+            <h1>
+                THE HOME OF
+                <span>LEGENDS</span>
+            </h1>
+
+            <p class="hero-description">
+                More than a football club. More than a century of
+                passion, greatness and unforgettable victories.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#trophy-room" class="btn-gold">
+                    EXPLORE THE LEGACY
+                </a>
+
+                <a href="players.html" class="btn-outline">
+                    MEET THE LEGENDS
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-bottom">
+
+            <span>EST. 1902</span>
+
+            <span>HALA MADRID Y NADA MÁS</span>
+
+            <span>SCROLL TO EXPLORE ↓</span>
+
+        </div>
+
+    </header>
+
+    <section class="intro-section">
+
+        <div class="container">
+
+            <p class="section-eyebrow text-center">
+                MORE THAN A CLUB
+            </p>
+
+            <h2 class="intro-title">
+                A LEGACY BUILT
+                <span>ON GREATNESS</span>
+            </h2>
+
+            <p class="intro-description">
+                Founded in 1902, Real Madrid has become one of the
+                most successful and recognised football institutions
+                in the world. Through generations of extraordinary
+                players, historic victories and unforgettable moments,
+                the club continues to inspire millions.
+            </p>
+
+            <div class="intro-stats">
+
+                <div class="intro-stat">
+                    <strong>1902</strong>
+                    <span>YEAR FOUNDED</span>
+                </div>
+
+                <div class="intro-stat">
+                    <strong>15</strong>
+                    <span>EUROPEAN CUPS</span>
+                </div>
+
+                <div class="intro-stat">
+                    <strong>36</strong>
+                    <span>LA LIGA TITLES</span>
+                </div>
+
+                <div class="intro-stat">
+                    <strong>1</strong>
+                    <span>CLUB. ONE LEGACY.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="trophy-section" id="trophy-room">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-number">01</div>
+
+                <div>
+
+                    <p class="section-eyebrow">
+                        THE MOST PRESTIGIOUS COLLECTION
+                    </p>
+
+                    <h2>
+                        THE TROPHY
+                        <span>ROOM</span>
+                    </h2>
+
+                    <p class="section-description">
+                        Every trophy tells a story. Every victory
+                        represents a chapter in our history.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="history-controls">
+
+                <div class="history-year-info">
+
+                    <span>EXPLORE OUR HISTORY</span>
+
+                    <strong id="selectedYear">2024</strong>
+
+                </div>
+
+                <div class="history-slider-container">
+
+                    <input type="range"
+                           id="historyYearSlider"
+                           min="1902"
+                           max="2026"
+                           value="2024"
+                           step="1"
+                           aria-label="Select historical year">
+
+                    <div class="slider-labels">
+                        <span>1902</span>
+                        <span>1950</span>
+                        <span>2000</span>
+                        <span>2026</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="other-trophies" id="trophy-statistics">
+
+                <div class="other-trophies-heading">
+
+                    <p class="section-eyebrow">
+                        A COLLECTION OF EXCELLENCE
+                    </p>
+
+                    <h3>
+                        MORE THAN
+                        <span>EUROPEAN GLORY</span>
+                    </h3>
+
+                </div>
+
+                <div class="trophy-stats-grid">
+
+                    <div class="trophy-stat">
+                        <div class="trophy-stat-top">
+                            <span class="trophy-icon">♛</span>
+                            <strong id="uclCount">15</strong>
+                        </div>
+                        <p>Champions League</p>
+                        <div class="progress-track">
+                            <div id="uclProgress" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="trophy-stat">
+                        <div class="trophy-stat-top">
+                            <span class="trophy-icon">♛</span>
+                            <strong id="leagueCount">36</strong>
+                        </div>
+                        <p>National Leagues</p>
+                        <div class="progress-track">
+                            <div id="leagueProgress" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="trophy-stat">
+                        <div class="trophy-stat-top">
+                            <span class="trophy-icon">🏆</span>
+                            <strong id="spanishCupCount">20</strong>
+                        </div>
+                        <p>Spanish Cups</p>
+                        <div class="progress-track">
+                            <div id="spanishCupProgress" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="trophy-stat">
+                        <div class="trophy-stat-top">
+                            <span class="trophy-icon">🏆</span>
+                            <strong id="worldCount">9</strong>
+                        </div>
+                        <p>World Titles</p>
+                        <div class="progress-track">
+                            <div id="worldProgress" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="trophy-stat">
+                        <div class="trophy-stat-top">
+                            <span class="trophy-icon">🏆</span>
+                            <strong id="spanishSuperCount">13</strong>
+                        </div>
+                        <p>Spanish Super Cups</p>
+                        <div class="progress-track">
+                            <div id="spanishSuperProgress" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="trophy-stat">
+                        <div class="trophy-stat-top">
+                            <span class="trophy-icon">🏆</span>
+                            <strong id="europeanSuperCount">6</strong>
+                        </div>
+                        <p>European Super Cups</p>
+                        <div class="progress-track">
+                            <div id="europeanSuperProgress" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="trophy-stat">
+                        <div class="trophy-stat-top">
+                            <span class="trophy-icon">🏆</span>
+                            <strong id="uefaCount">2</strong>
+                        </div>
+                        <p>UEFA Cups</p>
+                        <div class="progress-track">
+                            <div id="uefaProgress" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="data-note">
+                Historical trophy figures are based on the official
+                Real Madrid honours list. The displayed historical
+                categories are recorded through 2024.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="timeline-section" id="history">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-number">02</div>
+
+                <div>
+
+                    <p class="section-eyebrow">
+                        MORE THAN A CENTURY OF GLORY
+                    </p>
+
+                    <h2>THE HISTORY <span>OF MADRID</span></h2>
+
+                    <p class="section-description">
+                        Discover the eras that shaped the identity
+                        of Real Madrid.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-list">
+
+                <article class="timeline-item">
+
+                    <div class="timeline-year">1902</div>
+
+                    <div class="timeline-image">
+                        <img src="images/moments/foundation.jpg"
+                             alt="The foundation of Real Madrid"
+                             loading="lazy">
+                    </div>
+
+                    <div class="timeline-content">
+                        <span>THE BEGINNING</span>
+                        <h3>THE CLUB IS BORN</h3>
+                        <p>
+                            Real Madrid was founded in 1902.
+                            What began as a football club would
+                            grow into one of the most recognised
+                            sporting institutions in the world.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="timeline-item reverse">
+
+                    <div class="timeline-year">1950s</div>
+
+                    <div class="timeline-image">
+                        <img src="images/moments/di-stefano-era.jpg"
+                             alt="Alfredo Di Stefano era"
+                             loading="lazy">
+                    </div>
+
+                    <div class="timeline-content">
+                        <span>THE FIRST EUROPEAN DYNASTY</span>
+                        <h3>THE GOLDEN ERA</h3>
+                        <p>
+                            Led by legendary players such as
+                            Alfredo Di Stéfano, Real Madrid
+                            established itself as a dominant
+                            force in European football.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="timeline-item">
+
+                    <div class="timeline-year">2000s</div>
+
+                    <div class="timeline-image">
+                        <img src="images/moments/galacticos.jpg"
+                             alt="The Galacticos era"
+                             loading="lazy">
+                    </div>
+
+                    <div class="timeline-content">
+                        <span>THE GALACTICOS</span>
+                        <h3>A TEAM OF SUPERSTARS</h3>
+                        <p>
+                            The club brought together some of
+                            the world's greatest footballers,
+                            creating an unforgettable generation
+                            of Galácticos.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="timeline-item reverse">
+
+                    <div class="timeline-year">2014</div>
+
+                    <div class="timeline-image">
+                        <img src="images/moments/la-decima.jpg"
+                             alt="Real Madrid winning La Decima"
+                             loading="lazy">
+                    </div>
+
+                    <div class="timeline-content">
+                        <span>THE TENTH EUROPEAN CUP</span>
+                        <h3>LA DÉCIMA</h3>
+                        <p>
+                            Real Madrid defeated Atlético Madrid
+                            in Lisbon to win its tenth European Cup.
+                            Sergio Ramos' late equaliser became
+                            one of football's most famous moments.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="timeline-item">
+
+                    <div class="timeline-year">2016–18</div>
+
+                    <div class="timeline-image">
+                        <img src="images/moments/three-peat.jpg"
+                             alt="Real Madrid three consecutive Champions League titles"
+                             loading="lazy">
+                    </div>
+
+                    <div class="timeline-content">
+                        <span>EUROPEAN DOMINANCE</span>
+                        <h3>THE THREE-PEAT</h3>
+                        <p>
+                            Under Zinedine Zidane, Real Madrid
+                            achieved an extraordinary milestone:
+                            three consecutive Champions League
+                            titles from 2016 to 2018.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="timeline-item reverse">
+
+                    <div class="timeline-year">2022</div>
+
+                    <div class="timeline-image">
+                        <img src="images/moments/fourteenth-ucl.jpg"
+                             alt="Real Madrid fourteenth Champions League victory"
+                             loading="lazy">
+                    </div>
+
+                    <div class="timeline-content">
+                        <span>ANOTHER HISTORIC NIGHT</span>
+                        <h3>THE FOURTEENTH</h3>
+                        <p>
+                            Real Madrid defeated Liverpool in
+                            Paris to claim its fourteenth European
+                            Cup, continuing its extraordinary
+                            relationship with European football.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="moments-section" id="moments">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-number">03</div>
+
+                <div>
+
+                    <p class="section-eyebrow">
+                        UNFORGETTABLE NIGHTS
+                    </p>
+
+                    <h2>GREATEST <span>MOMENTS</span></h2>
+
+                    <p class="section-description">
+                        Moments that will live forever in football history.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="moments-grid">
+
+                <article class="moment-card">
+
+                    <img src="images/moments/la-decima.jpg"
+                         alt="La Decima 2014"
+                         loading="lazy">
+
+                    <div class="moment-overlay">
+                        <span>2014 · LISBON</span>
+                        <h3>LA DÉCIMA</h3>
+                        <p>The tenth European Cup.</p>
+                    </div>
+
+                </article>
+
+                <article class="moment-card">
+
+                    <img src="images/moments/three-peat.jpg"
+                         alt="Three consecutive Champions League titles"
+                         loading="lazy">
+
+                    <div class="moment-overlay">
+                        <span>2016–2018 · EUROPE</span>
+                        <h3>THREE-PEAT</h3>
+                        <p>Three consecutive European titles.</p>
+                    </div>
+
+                </article>
+
+                <article class="moment-card">
+
+                    <img src="images/moments/fourteenth-ucl.jpg"
+                         alt="Fourteenth European Cup"
+                         loading="lazy">
+
+                    <div class="moment-overlay">
+                        <span>2022 · PARIS</span>
+                        <h3>THE FOURTEENTH</h3>
+                        <p>Another unforgettable European night.</p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="quiz-section" id="quiz">
+
+        <div class="container">
+
+            <p class="section-eyebrow text-center">
+                TEST YOUR KNOWLEDGE
+            </p>
+
+            <h2 class="quiz-title">
+                ARE YOU A TRUE
+                <span>MADRIDISTA?</span>
+            </h2>
+
+            <p class="quiz-description">
+                Think you know everything about Real Madrid?
+                Take the challenge and prove it.
+            </p>
+
+            <div class="quiz-records">
+
+                <div class="quiz-record">
+                    <span>BEST SCORE</span>
+                    <strong id="bestScore">0 / 10</strong>
+                </div>
+
+                <div class="quiz-record">
+                    <span>LAST SCORE</span>
+                    <strong id="lastScore">—</strong>
+                </div>
+
+            </div>
+
+            <div class="quiz-container" id="quizContainer">
+
+                <div class="quiz-progress">
+                    <div id="quizProgress"></div>
+                </div>
+
+                <div class="quiz-top">
+
+                    <span id="quizQuestionNumber">
+                        QUESTION 1 / 10
+                    </span>
+
+                    <span id="quizScore">
+                        SCORE: 0
+                    </span>
+
+                </div>
+
+                <h3 id="quizQuestion">
+                    Loading question...
+                </h3>
+
+                <div class="quiz-options" id="quizOptions"></div>
+
+                <p id="quizFeedback" aria-live="polite"></p>
+
+                <button id="nextQuestion" class="btn-gold" disabled>
+                    NEXT QUESTION
+                </button>
+
+            </div>
+
+            <div id="quizResult" class="quiz-result" hidden>
+
+                <p class="section-eyebrow">
+                    YOUR FINAL RESULT
+                </p>
+
+                <h3 id="finalScore"></h3>
+
+                <p id="finalMessage"></p>
+
+                <div class="quiz-result-stats">
+
+                    <div class="quiz-result-stat">
+                        <span>Percentage</span>
+                        <strong id="resultPercentage">0%</strong>
+                    </div>
+
+                    <div class="quiz-result-stat">
+                        <span>Correct answers</span>
+                        <strong id="correctAnswers">0</strong>
+                    </div>
+
+                    <div class="quiz-result-stat">
+                        <span>Incorrect answers</span>
+                        <strong id="incorrectAnswers">0</strong>
+                    </div>
+
+                </div>
+
+                <div id="answerReview" class="answer-review"></div>
+
+                <button id="restartQuiz" class="btn-gold">
+                    TRY AGAIN
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section" id="contact">
+
+        <div class="container">
+
+            <div class="contact-heading">
+
+                <p class="section-eyebrow">
+                    BECOME PART OF THE STORY
+                </p>
+
+                <h2>
+                    JOIN THE
+                    <span>MADRIDISTA FAMILY</span>
+                </h2>
+
+                <p>
+                    Share your thoughts, your favourite moments
+                    and your love for Real Madrid.
+                </p>
+
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <label for="contactName">
+                            Your name
+                        </label>
+
+                        <input type="text"
+                               id="contactName"
+                               class="form-control"
+                               placeholder="Enter your name"
+                               required
+                               minlength="2">
+
+                        <small class="field-error" id="nameError"></small>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label for="contactEmail">
+                            Your email
+                        </label>
+
+                        <input type="email"
+                               id="contactEmail"
+                               class="form-control"
+                               placeholder="example@email.com"
+                               required>
+
+                        <small class="field-error" id="emailError"></small>
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <label for="contactMessage">
+                            Your message
+                        </label>
+
+                        <textarea id="contactMessage"
+                                  class="form-control"
+                                  rows="5"
+                                  placeholder="Write your message..."
+                                  required
+                                  minlength="10"></textarea>
+
+                        <small class="field-error" id="messageError"></small>
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <button type="submit" class="btn-gold">
+                            SEND MESSAGE
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <p id="contactSuccess"
+                   class="contact-success"
+                   aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="main-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div>
+                    <h3>REAL MADRID</h3>
+                    <p>HALA MADRID Y NADA MÁS.</p>
+                </div>
+
+                <div class="footer-navigation">
+
+                    <a href="#home">Home</a>
+                    <a href="#history">History</a>
+                    <a href="#moments">Moments</a>
+                    <a href="players.html">Players</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <span>© 2026 REAL MADRID FAN MUSEUM</span>
+                <span>BUILT WITH PASSION FOR FOOTBALL</span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="history.js"></script>
+    <script src="main.js"></script>
+    <script src="timeline.js"></script>
+    <script src="theme.js"></script>
+
+</body>
+
+</html>

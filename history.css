@@ -1,0 +1,436 @@
+.history-section {
+    background: #f5f6fa;
+    color: #08152f;
+    padding: 110px 0;
+}
+
+    .history-section .section-heading p:last-child {
+        color: #687086;
+    }
+
+.trophy-room {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.champions-display {
+    min-width: 0;
+    min-height: 560px;
+    padding: 35px 25px 25px;
+    background: linear-gradient(145deg, #101b31, #263448);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(8, 21, 47, 0.12);
+}
+
+.display-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .display-heading h3 {
+        color: #e5c45e;
+        font-family: "Cinzel", serif;
+        font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+        letter-spacing: 2px;
+        text-align: center;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+.display-line {
+    height: 1px;
+    flex: 1;
+    background: rgba(212, 175, 55, 0.5);
+}
+
+.ucl-count {
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+    .ucl-count span:first-child {
+        display: block;
+        font-family: "Cinzel", serif;
+        font-size: 4rem;
+        line-height: 1;
+        color: #d4af37;
+        font-weight: 700;
+    }
+
+    .ucl-count span:last-child {
+        display: block;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 0.75rem;
+        letter-spacing: 3px;
+        margin-top: 10px;
+    }
+
+.trophy-shelf {
+    min-height: 180px;
+    padding: 15px 5px 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: relative;
+}
+
+.ucl-trophy {
+    width: 48px;
+    height: 105px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: trophyAppear 0.45s ease both;
+    transform-origin: bottom center;
+    transition: filter 0.3s ease;
+}
+
+    .ucl-trophy:hover {
+        filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.8));
+    }
+
+    .ucl-trophy svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.45));
+    }
+
+@keyframes trophyAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.empty-trophy-message {
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 35px 10px;
+}
+
+.shelf-base {
+    height: 12px;
+    width: 100%;
+    background: linear-gradient( to bottom, #d4af37, #8f702b 45%, #44351b );
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.trophy-caption {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 20px 0 0;
+    letter-spacing: 1px;
+}
+
+.honours-panel {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px 25px;
+    color: #08152f;
+    box-shadow: 0 15px 35px rgba(8, 21, 47, 0.08);
+}
+
+.honours-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ebf0;
+}
+
+    .honours-heading h3 {
+        font-family: "Cinzel", serif;
+        font-size: 1.2rem;
+        margin: 0;
+        color: #08152f;
+    }
+
+    .honours-heading span {
+        color: #a18a4d;
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+.honours-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 18px;
+}
+
+.honour-card {
+    min-width: 0;
+    position: relative;
+    padding-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+    .honour-card:hover {
+        transform: translateY(-4px);
+    }
+
+.honour-icon {
+    color: #3026bc;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.honour-info strong {
+    display: block;
+    color: #08152f;
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+}
+
+.honour-info span {
+    display: block;
+    color: #526078;
+    font-size: 0.76rem;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+.honour-progress {
+    height: 5px;
+    width: 100%;
+    background: #e9e7f5;
+    border-radius: 10px;
+    margin-top: 9px;
+    overflow: hidden;
+}
+
+    .honour-progress span {
+        display: block;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(90deg, #3026bc, #8860ff);
+        border-radius: 10px;
+        transition: width 0.6s ease;
+    }
+
+.special-honour {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9ebf0;
+}
+
+    .special-honour .honour-icon {
+        font-size: 2.2rem;
+        margin: 0;
+    }
+
+    .special-honour .honour-info strong {
+        font-size: 1.8rem;
+    }
+
+.history-timeline {
+    margin-top: 40px;
+    padding: 35px 40px;
+    background: #ffffff;
+    border: 1px solid #e6e8ee;
+    border-radius: 15px;
+    color: #08152f;
+    box-shadow: 0 12px 30px rgba(8, 21, 47, 0.06);
+}
+
+.timeline-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+    .timeline-title .section-label {
+        margin-bottom: 8px;
+    }
+
+    .timeline-title h3 {
+        font-size: clamp(1.1rem, 2.5vw, 1.8rem);
+        margin: 0;
+    }
+
+        .timeline-title h3 span {
+            color: #b8942e;
+        }
+
+.selected-year {
+    min-width: 110px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid #3026bc;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+    .selected-year span {
+        font-family: "Cinzel", serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #08152f;
+    }
+
+.timeline-slider-wrapper {
+    padding: 0 5px;
+}
+
+#historyYearSlider {
+    width: 100%;
+    height: 9px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #3026bc, #8860ff);
+    cursor: pointer;
+    outline: none;
+}
+
+    #historyYearSlider::-webkit-slider-thumb {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 5px solid #3026bc;
+        box-shadow: 0 2px 8px rgba(48, 38, 188, 0.3);
+    }
+
+    #historyYearSlider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 5px solid #3026bc;
+        box-shadow: 0 2px 8px rgba(48, 38, 188, 0.3);
+    }
+
+    #historyYearSlider:focus-visible {
+        outline: 3px solid rgba(48, 38, 188, 0.25);
+        outline-offset: 7px;
+    }
+
+.timeline-years {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color: #747d90;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.timeline-result {
+    margin-top: 30px;
+    padding: 18px 20px;
+    background: #f5f6fa;
+    border-left: 4px solid #d4af37;
+    border-radius: 5px;
+}
+
+    .timeline-result p {
+        margin: 0;
+        color: #526078;
+        line-height: 1.7;
+    }
+
+@media (max-width: 991.98px) {
+
+    .trophy-room {
+        grid-template-columns: 1fr;
+    }
+
+    .champions-display {
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .champions-display {
+        min-height: 390px;
+        padding: 25px 12px;
+    }
+
+    .display-heading {
+        gap: 7px;
+    }
+
+        .display-heading h3 {
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+        }
+
+    .ucl-count span:first-child {
+        font-size: 3rem;
+    }
+
+    .trophy-shelf {
+        gap: 2px;
+    }
+
+    .ucl-trophy {
+        width: 35px;
+        height: 80px;
+    }
+
+    .honours-panel {
+        padding: 25px 18px;
+    }
+
+    .honours-heading {
+        flex-wrap: wrap;
+    }
+
+    .honours-grid {
+        gap: 20px 12px;
+    }
+
+    .honour-info strong {
+        font-size: 1.6rem;
+    }
+
+    .honour-info span {
+        font-size: 0.68rem;
+    }
+
+    .history-timeline {
+        padding: 25px 18px;
+    }
+
+    .timeline-title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .selected-year {
+        min-width: 100px;
+    }
+}
